@@ -1,0 +1,64 @@
+# Build sonuçları
+bin/
+obj/
+out/
+
+# Rider / VSCode / VS ayarları
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Kullanıcıya özel dosyalar
+*.rsuser
+*.sln.iml
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+logs/
+
+# Publish çıktıları
+*.PublishSettings
+publish/
+wwwroot/
+
+# Kestrel
+*.db
+
+# Coverage
+*.coverage
+*.coveragexml
+coverage/
+
+# Visual Studio Code uzantıları
+.history/
+*.code-workspace
+
+# Rider cache
+.idea/
+
+# Temp
+*.tmp
+*.temp
+
+# SonarQube
+.sonar/
