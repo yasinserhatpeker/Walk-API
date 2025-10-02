@@ -13,15 +13,28 @@ namespace MyApp.Controllers
 
         public RegionController(NZWalkDbContext context)
         {
-             _context = context;
+            _context = context;
         }
 
-         [HttpGet]
+        [HttpGet]
         public IActionResult GetAll()
         {
             var regions = _context.Regions.ToList();
             return Ok(regions);
-           
+
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            var region = _context.Regions.FirstOrDefault(x => x.Id == id);
+            if (region == null)
+            {
+                return NotFound();
+            }
+            return Ok(region);
+
         }
     }
 }
